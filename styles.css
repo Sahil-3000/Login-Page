@@ -1,0 +1,125 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.background {
+    background-image: url('background.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.login-container {
+    width: 400px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    margin-top: 10px;
+}
+
+.password-group {
+    position: relative;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a3bffa;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+#togglePassword:hover {
+    color: #fff;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+}
+
+.forgot-password {
+    color: #a3bffa;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #3e8ed0;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2c6cb1;
+}
+
+.register-link {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.register-link a {
+    color: #a3bffa;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}

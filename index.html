@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body>
+    <div class="background"></div>
+    <div class="login-container">
+        <h2>Welcome</h2>
+        <form>
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group password-group">
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <i class="fa fa-eye" id="togglePassword"></i> <!-- Eye icon -->
+            </div>
+            <div class="options">
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+            <button type="submit">Log In</button>
+            <p class="register-link">Don't have an account? <a href="#">Register</a></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
